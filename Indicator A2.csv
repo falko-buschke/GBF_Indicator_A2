@@ -1,0 +1,129 @@
+﻿ISO3,Party,A2,Source,Disaggregation,Data Type,Notes
+EUE,EU,0.455,National data,Natural and semi-natural,Land cover,Used Corine Land cover data 
+UGA,Uganda,Unclear,National data,None,Mixed data,Only data for forests and wetlands
+LSO,Lesotho,0.8002,National data,GET,Ecosystem map,Used Global Ecosystem Atlas
+CHE,Switzerland,No data available,NA,None,None,Eurostat Typology will be available from 2027 and updated annually
+SDN,Sudan,0.943468,National data,None,Land cover,"Unclear, but seems to be landcover data "
+JPN,Japan,No data available,NA,None,None,No extra context
+FIN,Finland,0.8972,National data,GET,Land cover,"Used Corine Land cover data 2018, crosswalked to GET"
+TGO,Togo,No data available,NA,None,Mixed data,Reported 24.4% forest cover (including planted areas)
+GMB,The Gambia,No data available,NA,None,Land cover,"Baseline land cover data exists, but updated national ecosystem extent statistics aligned with GBF definitions are pending."
+NGA,Nigeria,0.779,National data,Ecosystem type,Mixed data,"Global Forest Watch, Scientific paper, FAO, estimates - no single map"
+NZL,New Zealand,0.7877,National data,None,Ecosystem map,Based on National Ecosystem map (should be ready in March 2026 for Global Ecosystems Atlas)
+SWE,Sweden,0.940792,National data,Landcover classes,Land cover,"2023 National Land Cover Data, Statistics, Sweden (data for 2018 = 94.13%)"
+KAZ,Kazakhstan,No data available,NA,None,None,"Only have data for forests and protected areas, which are legally mandated"
+IND,India,No data available,NA,None,None,"Claims that data are available for some ecosystems, but not compatible with IUCN GET"
+TUN,Tunisia,0.6917,National data,None,Land cover,"Uses UNBL land cover data (ESA, excluding cropland and urban)"
+NLD,Netherlands,0.25676,National data,GET,Ecosystem map,VErye detailed disaggregation for period 2016-2023
+ARM,Armenia,No data available,NA,None,None,Claim to have no data
+SOM,Somalia,No data available,NA,None,None,No data availability
+VEN,Venezuela,Unclear,National data,Ecosystem type,Ecosystem map,"Ecosystem data from 2010, explain that updating this map is a priority. Unclear whether the area statistics are accurate, becasue the values are too low for the units in hectares."
+MHL,Marshall Islands,No data available,NA,None,None,Deferred to 8th NR as there is no continuous ecosystem monitoring
+IDN,Indonesia,No data available,NA,None,None,An in-depth analysis is required to determine which ecosystem types can be classified as the extent of natural ecosystems as restored ecosysytems are not considered natural by Indonesian la
+THA,Thailand,Unclear,National data,GET,Inventory data,"Extent data for forest , seagrass, and coral from inventories (2020-2024); total area not reported"
+ITA,Italy,No data available,NA,None,None,Ecosystem accounts are legally mandated by EU and will be reported at end of 2026
+MDG,Madagascar,0.939166,National data,None,Land cover,"Value in hectares is given based on ESA landscover (natural classes not identified), but total area not reported. Used 587295 km2 from World Bank"
+MAR,Morocco,Unclear,National data,None,None,"Simple statment of 9 million hectares of forest, steppe, and desert (total area not reported)"
+HUN,Hungary,No data available,NA,None,None,Data might be provided later
+BDI,Burundi,Unclear,National data,None,None,"Unchanging value (in hectares) is given, but not described (Total area not reported)"
+RUS,Russia,No data available,NA,None,None,No data available
+KHM,Cambodia,No data available,NA,None,None,Cambodia will use global dataset for this KM-GBF Goal A.2. Extent of natural ecosystems when it is available.
+ETH,Ethiopia,No data available,NA,None,None,Data and information were collected from respective lead implementing and other concerned institutions and there is no consolidated database
+LKA,Sri Lanka,No data available,NA,None,None,"The raw datasets for development of indicators A.1 and A.2 are available to a considerable degree but await identification and filling of data gaps, data cleaning and national level validation through a participatory approach."
+BLR,Belarus,No data available,NA,None,None,"The indicator does not correspond to the national statistical indicators, the collection and analysis of which is carried out in the Republic of Belarus"
+BEL,Belgium,0.436332707,National data,Biome,Land cover,Likely over-estimate becasue it only exludes settlements and croplands as non-natural(pastures probbaly included under grassland)
+TUR,Turkey,No data available,NA,None,None,"Data unavailable, particularly for marine realm"
+DOM,Dominican Republic,No data available,NA,None,None,Data to be completed later
+DEU,Germany,No data available,NA,None,None,The German data is not yet compatible with the UN metadata. The indicator has to be developed.
+IRL,Ireland,0.23992,National data,GET,Ecosystem map,"Ireland's A.2 indicator is drawn directly from ecosystem extent accounts compiled based on the SEEA Esosystem Accounting framework. Ireland follows UNSEEA methodology, with IUCN GET ecosystem classification."
+POL,Poland,0.4268,National data,Ecosystem type,Mixed data,"A.2 not reported, but area stats are copied under indicaotr A.1"
+CHL,Chile,0.78182,National data,GET,Ecosystem map,"Indicator value here is for terrestrial, Chile reported seprately for each realm"
+GBR,United Kingdom,0.24,National data,GET,Ecosystem map,"Data here for terrestrial only, marine also include"
+VCT,Saint Vincent and the Grenadines,No data available,NA,None,None,No national or global data available for A.2 Extent of natural ecosystems for SVG. The country is going to establish baseline for this indicator in 2026
+HND,Honduras,0.9462,National data,Landcover classes,Land cover,2024 National Forest Cover and Land Use Map from the Honduran Forestry Institute (ICF): (sigmof.icf.gob.hn)
+GTM,Guatemala,0.5277,National data,Forest types,Land cover,"Only daya for forest, built-up, and agriculture. Assume that the missing proportion is natural"
+TZA,Tanzania,Unclear,National data,Forest types,Forest cover,Only reported change in forest cover
+KEN,Kenya,Unclear,National data,Ecosystem type,Inventory data,Only reports for three ecosystem types that make up 8.21%
+PER,Peru,0.90499,National data,GET,Ecosystem map,"Total area not reported, estimated from internet search"
+NPL,Nepal,0.708,National data,None,Unclear,"Data type not reported, but may be available as a seperate NBSAP appendix"
+SGP,Singapore,0.045,National data,None,Unclear,"Only protected areas, likely underestimate as it exclude unprotected natural land"
+COK,Cook Islands,No data available,NA,None,None,No data available
+ESP,Spain,0.445,National data,None,Ecosystem map,Plan to disaggregate when EUNIS-GET crosswalk is available
+SLV,El Salvador,0.302,National data,Forest types,Ecosystem map,Ecosystems data portal: https://visorsima.ambiente.gob.sv/map
+BTN,Bhutan,0.643496002,National data,Forest types,Inventory data,"Only extent of forest type, total area unlear (based on 38,394km2 from World Bank)"
+LBR,Liberia,No data available,NA,None,None,There is not national ecosystem extent dataset (map) available for the reporting period.
+MYS,Malaysia,Unclear,National data,Protection status,Inventory data,"Not ecosystem data, only protected areas, forest reserves, and state forests."
+ISR,Israel,0.623245,National data,None,Land cover,Trend based on Biodiversity Index of 9 classes of 'ecological units'
+ZAF,South Africa,0.794223953,National data,GET,Ecosystem map,"National Biodiversity Assessment 2025 (also data from 1990 and 2014), new ecosystem accounts expected in 2027"
+FRA,France,0.348,National data,Natural and semi-natural,Ecosystem accounts,"Ecosystem accounts (2012 and 2018), next update in 2026"
+MDA,Moldova,0.1353,National data,None,Inventory data,Only forest land earmarked for protection (denominator from: https://statbank.statistica.md/PxWeb/pxweb/ro/10%20Mediul%20inconjurator/10%20Mediul%20inconjurator__MED050/MED050100.px/table/tableViewLayout2/?rxid=b2ff27d7-0b96-43c9-934b-42e1a2a9a774)
+COL,Colombia,0.682381247,National data,GET,Ecosystem map,"Multi-year data, demoninator not 100% certain."
+IRQ,Iraq,Unclear,National data,Forest types,Forest cover,Only reports forest cover at 1.4%
+BHR,Bahrain,No data available,NA,None,None,"Data only available for mangroves, seagrass, and coral. No map exists"
+CAN,Canada,0.916,National data,Ecological province,Land cover,Seems to be landcover as it describes broad classes
+ZWE,Zimbabwe,Unclear,National data,Forest types,Forest cover,"World Bank FAO forest cover indicator, No national data"
+COG,Congo,No data available,NA,None,None,No summary in long descriptive narrative
+CYP,Cyprus,No data available,NA,None,None,No context added
+PAN,Panama,No data available,NA,None,None,No infomation on natural ecosystems
+SEN,Senegal,0.6982,National data,Ecosystem type,Land cover,"Unclear disaggreagation (not sure of denominator), did not include protected area coverage stats"
+ZMB,Zambia,0.5923,National data,None,Unclear,"Only area figures (2020-2026), denominator from internet is 752610 km2 World Bank"
+SUR,Suriname,0.945,National data,None,Land cover,"Data from: https://www.gonini.org/ (state that ecosytems disaggreagtion exists, but not GET)"
+MNG,Mongolia,0.976,National data,GET,Land cover,"Landcover data dissaggregated to GET level 2. Total adds to 101%, so this is total area minus T7 biome"
+MOZ,Mozambique,No data available,National data,None,None,"Lack of reliable data, but high quality ecosystem map exists: https://sibmoz.gov.mz/ecosystems/"
+SWZ,Eswatini,0.6068,National data,None,Land cover,Data exists from Global Ecosystem Atlas (was shared with Eswatini officials). Denominator taken from Atlas data
+GRC,Greece,No data available,NA,None,None,Under review
+BOL,Bolivia,Unclear,National data,GET,Unclear,"Data only add to 32%. In comments section, report indicitative maps from GET website (also not add to 100%)"
+QAT,Qatar,No data available,NA,None,None,Data under preparation
+NAM,Namibia,No data available,NA,None,None,Still to be developed under SBAPP programme
+ISL,Iceland,0.971,National data,None,Ecosystem map,EUNIS classification systems
+BFA,Burkina Faso,No data available,NA,None,None,To be completed
+KOR,Republic of Korea,No data available,NA,None,None,Mapping process underway
+GAB,Gabon,0.8812,National data,None,Forest cover,"Only forest cover. No denominator, so used 26.8 million hectars from internet"
+URY,Uruguay,0.8043,National data,None,Land cover,Data from MapBiomas
+MLT,Malta,0.1822,National data,Ecosystem type,Land cover,"Total area not reported, estimated from internet search as 316km2"
+MEX,Mexico,0.747,National data,None,Ecosystem accounts,"Time-sereis data provided, so assumed to use landcover data"
+GNQ,Equatorial Guinea,0.93,National data,None,Forest cover,Forest inventory and forest map
+PAK,Pakistan,Unclear,National data,None,Inventory data,Only reports forest coverage of 5.4%
+VUT,Vanuatu,0.7396,National data,None,Forest cover,"Total land area not reported, used 1,226,905 hectares"
+NER,Niger,Unclear,National data,None,Unclear,Area stats reported are only a small fraction of a percent of total territory
+YEM,Yemen,0.98,National data,Ecosystem type,Land cover,"Only reported forest cover (~1%), the indicators is based on figures in the narrative."
+SYC,Seychelles,0.58,NA,Ecosystem type,Forest cover,"No data reported, narrative explains 58% forest cover"
+BGD,Bangladesh,0.2155384,National data,None,Land cover,"Unclear data source, assumed to be land cover"
+MWI,Malawi,0.53,National data,RLE Status,Ecosystem map,Data from National Spatial Biodiversity Assessment
+CMR,Cameroon,Unclear,National data,Ecosystem type,Land cover,"Data available, but nowehere near the total land area of Cameroon"
+SLE,Sierra Leone,No data available,NA,None,None,No systematic data available
+COD,Democratic Republic of the Congo,No data available,NA,None,None,No reference data available
+AUS,Australia,0.8475,National data,None,Land cover,"Assumed landcover - However, there are currently no national or global datasets that allows for a robust scientific estimation of the status and trends in threatened ecosystems at the national scale"
+BRN,Brunei Darussalam,No data available,NA,None,None,Data still under development
+PLW,Palau,No data available,NA,None,None,Data not yet available
+SVK,Slovakia,No data available,NA,None,None,"The index cannot be calculated because the spatial extent of natural ecosystems is unknown, as comprehensive ecosystem mapping has not been carried out."
+PRY,Paraguay,No data available,NA,None,None,"Paraguay is in the process of updating its ecoregions, and will then work on classifying ecosystems at the national level."
+OMN,Oman,No data available,NA,None,None,"Indicators are currently being updated, and the updated indicator data will be integrated after the review."
+GIN,Guinea,No data available,NA,None,None,The mapping of Protected Areas is still being developed.
+JOR,Jordan,Unclear,National data,None,Ecosystem map,"The value of 88,818km2 seems to be the whole territory of Jordan (99.44%), so seem to exclude intensive use ecosystems. NBSAP data seem to be biogeographical (sub)regions."
+CUB,Cuba,Unclear,National data,Forest types,Forest cover,"Only provide forest cover in protected area plus protected forests (together add up to only 16.8% of total area, which seems too low)"
+NOR,Norway,0.948052991,National data,Ecosystem type,Ecosystem map,"Assumed that lakes and reservoirs are natural, excluded marine."
+UZB,Uzbekistan,0.7912,National data,None,Land cover,UNBL data - states that the GET indicative maps are poor
+CHN,China,0.688346957,National data,Ecosystem type,Ecosystem map,"Provide area for forest, desert, wetland, and grassland, but not total area. (I used 9.56291 million km from World Bank)"
+LUX,Luxembourg,0.168899382,National data,Ecosystem type,Ecosystem map,"Total area not provided, used 2590km2 from World Bank"
+ECU,Ecuador,0.59706536,National data,Natural and semi-natural,Land cover,"Data for 2022 and 2020, pending verification. Class 'Sin Inormacion' was considered as natural in indicator."
+KGZ,Kyrgyzstan,No data available,NA,None,None,no indicator has been developed at the national level
+SSD,South Sudan,No data available,NA,None,None,No additional information
+SAU,Saudi Arabia,No data available,NA,None,None,National indicators will be included later.
+ARE,United Arab Emirates,No data available,NA,None,None,No data is currently being calculated.
+FSM,"Micronesia, Federated States of",No data available,NA,None,None,"As the NBSAP and this Seventh National Report have been developed concurrently, national-level data for Global Goal indicators are expected to be progressively generated through NBSAP implementation."
+CZE,Czech Republic,No data available,NA,None,None,"NBSAP being updated after the period ending 2025, so new indicator may be added at a later date"
+PHL,Philippines,0.527,National data,Protection status,Inventory data,Low level of certainty. This figure includes protected area and forested lands from the Land Classification Status (excludes 47.3% of agricultural land).  
+CIV,Côte d'Ivoire,No data available,NA,None,None,No extra context given
+BRA,Brazil,0.643395952,National data,Ecosystem type,Ecosystem accounts,"No denominator provided. Data seems to come from land cover. Followed the provided link to find the accounts tables from orignal source, figure differ slightly from those reported, but general allignment: https://sidra.ibge.gov.br/tabela/7016"
+CRI,Costa Rica,No data available,NA,None,None,"The indicator report is in progress. Although information has been identified for some of the main indicators, a team is currently working on compiling data that, in most cases, is scattered. The complete study of the indicators and the uploading of the available information for the country will be completed on the official platform by June 2026."
+GHA,Ghana,0.576437135,National data,GET,Ecosystem accounts,The indicaptr reports 'no data available' but there is an attached ecosystem account table that presents the data exactly as required
+WSM,Samoa,No data available,NA,None,None,Did not appear to reports against any headline indicators
+BEN,Benin,No data available,NA,None,None,Data not available
+GUY,Guyana,No data available,NA,None,None,Nationally consolidated datasets for the extent of natural ecosystems indicator have not yet been compiled for this reporting cycle. 
+DZA,Algeria,No data available,NA,None,None,Calculation in progress
+AUT,Austria,0.650162734,National data,None,Ecosystem accounts,"Total area not reported, so used 83879 km2 from World Bank"
+ALB,Albania,0.691,National data,Ecosystem type,Unclear,"Disaggregated by forest, wetland, and surface water"
+TCD,Chad,Unclear,National data,Ecosystem type,Unclear,"The sum of the three disaggregared values (desert,  sahel, and savanna) add up to the total area of the country"
+MLI,Mali,Unclear,National data,None,Unclear,"Provides 6 unlabeld area estimates, with proportions that do not add up to 1"
+EST,Estonia,0.7239,National data,None,Land cover,The classification of natural and artificial ecosystems is defined and mapped by the Estonian MAES project ELME2
