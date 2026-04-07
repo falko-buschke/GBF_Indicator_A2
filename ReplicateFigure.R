@@ -31,7 +31,7 @@ ramp <- brewer.pal(8,"Dark2")
 ramp <- ramp[c(8,6,4,1)]
 
 # Produce waffle plot
-png(filename="Figure1.png",width=19,height=7,units="cm",res=300)
+png(filename="Figures/Figure1.png",width=19,height=7,units="cm",res=300)
 par(mai=c(0.1,0.1,0.6,0.1))
 waffle(data, colors = ramp, legend_pos = "top", rows=7)
 dev.off()
@@ -42,7 +42,7 @@ dev.off()
 #																				#
 #########################################
 # Set plot specification
-png(filename="Figure2.png",width=28,height=12,units="cm",res=300)
+png(filename="Figures/Figure2.png",width=28,height=12,units="cm",res=300)
 par(mfrow=c(1,2))
 par(mai=c(0.7,1.8,0.3,0.1))
 
@@ -119,7 +119,7 @@ t.stat <- (mod$coefficients[2] - 1)/summary(mod)$coefficients[4]
 Resid.calc <- Depend - Indep
 
 # Set plot specification
-png(filename="Figure3.png",width=24,height=12,units="cm",res=300)
+png(filename="Figures/Figure3.png",width=24,height=12,units="cm",res=300)
 par(mfrow=c(1,2))
 par(mai=c(0.75,0.75,0.4,0.2))
 
@@ -182,7 +182,7 @@ ramp <- colorRampPalette(brewer.pal(9,"YlGn"),interpolate="linear")(10)
 brk <- seq(0,1,l=11)
 
 # Set plot specifications
-png(filename="Figure4.png",width=28,height=28,units="cm",res=300)
+png(filename="Figures/Figure4.png",width=28,height=28,units="cm",res=300)
 par(mfrow=c(2,1))
 par(mai=c(0.2,0.1,0.2,0.1))
 
