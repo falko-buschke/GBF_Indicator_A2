@@ -22,7 +22,7 @@ All outputs are saved to the directory `Figures`.
 ### Data files
 This repository relies on two input datasets:
 
-* `Indicator A2.csv` - a spreadsheet developed by manually screening Parties' 7^th^ National Reports to the Convention on Biological Diversity (CBD), available from the [CBD Online Reprting Tool (ORT)](https://ort.cbd.int/national-reports/nr7). Data are up-to-date as of 31 March 2026.
+* `Indicator A2.csv` - a spreadsheet developed by manually screening Parties' 7<sup>th</sup> National Reports to the Convention on Biological Diversity (CBD), available from the [CBD Online Reprting Tool (ORT)](https://ort.cbd.int/national-reports/nr7). Data are up-to-date as of 31 March 2026.
 * `WRI_data.csv` - A cleaned summary spreadsheet for the total extent of natural land in each country. This is the output from the Earth Engine script `GEE_Script.js`, but is augemented to include country ISO3 codes.
 
 ### Figures Directory
