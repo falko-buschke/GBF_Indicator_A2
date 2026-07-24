@@ -1,5 +1,5 @@
 # Load required packages
-#install.packages(c("waffle", RColorBrewer", "quantreg", "rworldmap"))
+#install.packages(c("waffle", RColorBrewer"))
 library(RColorBrewer)	# Colour palettes
 library(waffle)				# Figure 1
 library(quantreg) 		# Quantile regression
@@ -9,9 +9,9 @@ library(rworldmap) 		# Producing maps
 GBF <- read.csv("Indicator A2.csv", na.strings = "NULL")
 
 #########################################
-#																				#
-#									Figure 1 							#
-#																				#
+#										#
+#				Figure 1 				#
+#										#
 #########################################
 
 # Summarise reporting status
@@ -20,13 +20,23 @@ submitted <- dim(GBF)[1]  #  Number of Parties that submitted 7th National Repor
 Ind.A2 <- submitted - length(which(GBF$A2 == "No data available")) # Parties that eported on A.2
 usable <- Ind.A2 - length(which(GBF$A2 == "Unclear"))  # Parties that Reprorted on A.2 in a meaningful way
 
-# Group data for reporting status
-group <- c("Did not submit 7th National Report\n(34.7 %)","Did not report Indicator A.2\n(27.0 %)",
-	"Indicator A.2 incomplete\n(9.2 %)", "Complete Indicator A.2\n(29.1 %)")
+v1 <- (round((parties-submitted)/parties*100,1))
+v2 <- round((submitted-Ind.A2)/parties*100,1)
+v3 <- round((Ind.A2-usable)/parties*100,1)
+v4 <- round(usable/parties*100,1)
+
+# Create labels
+group <- c(paste0("Did not submit 7th National Report\n(", v1, "%)"),
+  paste0("Did not report Indicator A.2\n(", v2, "%)"),
+  paste0("Indicator A.2 incomplete\n(", v3, "%)"),
+  paste0("Complete Indicator A.2\n(", v4, "%)"))
+
+# Create data.frame
 value <- c(parties-submitted,submitted-Ind.A2, Ind.A2-usable,usable)
 data <- data.frame(group,value)
 
 # Set colour scheme
+ramp <- c(rgb(0.7,0.7,0.7,1), rev(brewer.pal(3,"Dark2")))
 ramp <- brewer.pal(8,"Dark2")
 ramp <- ramp[c(8,6,4,1)]
 
@@ -36,11 +46,13 @@ par(mai=c(0.1,0.1,0.6,0.1))
 waffle(data, colors = ramp, legend_pos = "top", rows=7)
 dev.off()
 
+
 #########################################
-#																				#
-#									Figure 2 							#
-#																				#
+#										#
+#				Figure 2 				#
+#										#
 #########################################
+
 # Set plot specification
 png(filename="Figures/Figure2.png",width=28,height=12,units="cm",res=300)
 par(mfrow=c(1,2))
@@ -72,10 +84,11 @@ abline(v=0)
 mtext("b. Disaggregation",cex=1.5, side = 3, adj = -0.8, line = 0.25,font=2)
 dev.off()
 
+
 #########################################
-#																				#
-#									Figure 3 							#
-#																				#
+#										#
+#				Figure 3 				#
+#										#
 #########################################
 
 # Read SBRN dataset
@@ -119,27 +132,32 @@ t.stat <- (mod$coefficients[2] - 1)/summary(mod)$coefficients[4]
 Resid.calc <- Depend - Indep
 
 # Set plot specification
-png(filename="Figures/Figure3.png",width=24,height=12,units="cm",res=300)
-par(mfrow=c(1,2))
-par(mai=c(0.75,0.75,0.4,0.2))
+png(filename="Figures/Figure3.png",width=28,height=10,units="cm",res=300)
+par(mfrow=c(1,3))
+par(mai=c(0.5,0.75,0.4,0.2))
 
 # Make Plot for panel A
 plot(GBF$A2,as.numeric(prop)[id], pch=16, col=rgb(0.2,0.4,0.5,0.6),las=1,cex=1.5, xlim=c(0,1), ylim=c(0,1),
 xlab= "A.2 reported by Parties", ylab="A.2 estimated from SBTN dataset", cex.axis=1.1, cex.lab= 1.3,mgp=c(2.6,0.6,0))
 
-# Add regression line andunity line (1:1)
-abline(lm(prop[id]~GBF$A2), col="red", lty=2)
+# Add regression line and unity line (1:1)
+abline(mod, col="red", lty=2)
 abline(a=0,b=1,col="blue")
+# Add R-squared value from unity line regression to plot
+text(0.0,0.92, bquote(y == .(round(mod$coefficients[2],2))*x - .(abs(round(mod$coefficients[1],2)))),cex=1.2, col="red",pos=4)
 
-# Add R-squared value to plot
-text(0.15,0.9, bquote(R^2 == .(round(R2,3))),cex=1.2)
+# Add R-squared value from unity line regression to plot
+text(0.0,0.86, bquote({R^2} [(OLS)]== .(round(summary(mod)$r.squared,3))),cex=1.2, col="red",pos=4)
+# Add R-squared value from unity line regression to plot
+text(0.0,0.76, bquote({R^2} [(1:1)]== .(round(R2,3))),cex=1.2, col="blue",pos=4)
+# Add root mean squared error
+text(0.0,0.66, bquote(RMSE== .(round(sqrt(mean(residuals(mod)^2)),3))),cex=1.2, col="black",pos=4)
 # Add legend
-legend("bottomright", lty=c(1,2),col=c("blue", "red"), c("1:1 line", "Linear regression"))
+legend("bottomright", lty=c(1,2),col=c("blue", "red"), c("1:1 line", "OLS regression"))
 # Label panel
-mtext("a",cex=1.6, side = 3, adj = -0.1, line = 0.35,font=2)
+mtext("a",cex=1.4, side = 3, adj = -0.1, line = 0.35,font=2)
 
 ##########################################
-
 # Match area values in the vector of total area in SBTN data to Parties that reported A.2
 id2 <- match(names(Resid.calc),names(total))
 
@@ -166,28 +184,44 @@ abline(a=quant_reg_99$coefficients[1], b=quant_reg_99$coefficients[2], lty=3, co
 # Add legend
 legend("bottomright", lty=c(2,3),col="darkgrey", c("0.1 & 0.99 Quantiles", "0.05 & 0.95 Quantiles"))
 # Label panel
-mtext("b",cex=1.6, side = 3, adj = -0.1, line = 0.35,font=2)
+mtext("b",cex=1.4, side = 3, adj = -0.1, line = 0.35,font=2)
+
+par(mai=c(0.6,1.05,0.4,0.15))
+Data_cat <- factor( GBF$Data.Type[index] , 
+  levels=rev(c("Ecosystem accounts", "Ecosystem map", "Forest cover", "Land cover", 
+    "Mixed sources", "Unclear")))
+# Make boxplot
+boxplot(as.numeric(Resid.calc)~Data_cat, outline=F, frame=F,horizontal=T,las=1, ylim=c(-0.4,0.4),log="",lty=1,ylab="", 
+        cex.axis=1.1,  cex.lab= 1.3,mgp=c(2.6,0.6,0), xlab= "Model residuals", col="cornsilk")
+
+# Add poiunts for individual protectedd areas
+stripchart(as.numeric(Resid.calc)~Data_cat,
+           method = "jitter",jitter=0.2, 
+           pch = 16, cex=1.5 , 
+           col = rgb(0.2,0.4,0.5,0.6),  
+           vertical = FALSE,   
+           add = TRUE)
+abline(v=0,lty=2); box()
+mtext("c",cex=1.4, side = 3, adj = -0.1, line = 0.35,font=2)
+text (0.18,2,"*",cex=3, col="black")
+text (0.32,1,"*",cex=3, col="black")
 dev.off()
 
 # Indicator A.2 for the whole planet
 (Global.A.2 <- sum(as.numeric(natural))/sum(as.numeric(total))*100)
 
 #########################################
-#																				#
-#									Figure 4 							#
-#																				#
+#										#
+#				Figure 4 				#
+#										#
 #########################################
-# Define colour ramp
 ramp <- colorRampPalette(brewer.pal(9,"YlGn"),interpolate="linear")(10)
 brk <- seq(0,1,l=11)
 
-# Set plot specifications
 png(filename="Figures/Figure4.png",width=28,height=28,units="cm",res=300)
 par(mfrow=c(2,1))
 par(mai=c(0.2,0.1,0.2,0.1))
 
-# Panel A
-# Create dataframe
 d <- data.frame(
   country=GBF$ISO3,
   index=as.numeric(GBF$A2),
@@ -195,21 +229,19 @@ d <- data.frame(
 
 d$index[which(d$index=="NaN")]<- NA
 
-# Spatial join
 n <- joinCountryData2Map(d, joinCode="ISO3", nameJoinColumn="country")
 n <- n[row.names(n) != 'Antarctica', ]
+
 n$missing[which(is.na(n$missing))]<- 1
 
-#Create Map
+ramp <- colorRampPalette(brewer.pal(9,"YlGn"),interpolate="linear")(10)
+brk <- seq(0,1,l=11)
 mapCountryData(n, nameColumnToPlot="index",mapTitle="", colourPalette = ramp, 
                borderCol="white", lwd=0.85, catMethod=brk,numCats=5, 
                addLegend=T, missingCountryCol="grey", nameColumnToHatch="missing")
-
-# Label panel
 mtext("a. Indicator A.2 reported by Parties " ,cex=1.6, side = 3, adj = 0, line = -0.75,font=2)
 mtext("Headline Indicator A.2 (Extent of natural ecosystems)" ,cex=1.6, side = 1, adj = 0.5, line = -2.5,font=1)
 
-# Add legend
 legend(-190,-25, c("Did not submit National Report", "Did not report Indicator A.2"), 
 	pt.cex=2,cex=1.1,    pt.bg="grey", pch = 22)
 
@@ -217,30 +249,39 @@ legend(-190,-25, c("Did not submit National Report", "Did not report Indicator A
 	pt.cex=2,cex=1.1,    col=c("white",NA), pch = 7, text.col="transparent", bty="n")
 
 ##########################################################################################
-# Panel B
 par(mai=c(0,0.1,0.4,0.1))
-
-# Creat dataframe
 df <- data.frame(
   country=names(prop),#WRI$ISO3,
   index = as.numeric(prop))#as.numeric(WRI$class_1_proportion))
+
 df$index[which(df$index=="NaN")]<- NA
-# Spatial join
 m <- joinCountryData2Map(df, joinCode="ISO3", nameJoinColumn="country")
 m <- m[row.names(m) != 'Antarctica', ]
-
-# Create map
 mapCountryData(m, nameColumnToPlot="index",mapTitle="", colourPalette = ramp, 
                borderCol="white", lwd=0.85, catMethod=brk,numCats=5,
                addLegend=F, missingCountryCol="lightgrey")
-# Label panel
 mtext("b. Indicator A.2 from SBTN Natural Lands Map" ,cex=1.6, side = 3, adj = 0, line = -0.75,font=2)
 dev.off()
-
-#######################################################################################################
-#######################################################################################################
 
 # Summary statistics for country-reported data
 summary(GBF$A2)
 # Summary statistics for SBTN data
 summary(as.numeric(prop))
+
+#################################################################
+
+# Analysing the residuals
+# Area explanatory variable
+area.val <- as.numeric(total)[id2]/1e9
+
+# Data type as categorical variable, with 'Ecosystem map' as the baseline category
+Data_cat <- relevel(factor(Data_cat), ref = "Ecosystem map")
+
+# Model of residuals
+res.mod <- lm(Resid.calc~scale(log(area.val)) * Data_cat)
+
+# Model anova
+anova(res.mod)
+
+# Model coefficients
+summary(res.mod)
