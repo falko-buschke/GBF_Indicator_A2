@@ -3,7 +3,7 @@ Code and data to replicate the analyses presented in the unpublished manuscript:
 
 * Buschke, F.T. *et al.* (In preparation) Reporting on the extent of natural ecosystems under the Kunming-Montreal Global Biodiversity Framework.
 
- Accurate as of 04 April 2026. For enquiries, contact `falko.buschke@gmail.com`
+ Accurate as of 24 July 2026. For enquiries, contact `falko.buschke@gmail.com`
 
  ## Repository structure
  The repository is made up of two code-scripts, two datasets, and a folder with outputs.
