@@ -229,7 +229,7 @@ df$index[which(df$index=="NaN")]<- NA
 m <- joinCountryData2Map(df, joinCode="ISO3", nameJoinColumn="country")
 m <- m[row.names(m) != 'Antarctica', ]
 
-# Creat map
+# Create map
 mapCountryData(m, nameColumnToPlot="index",mapTitle="", colourPalette = ramp, 
                borderCol="white", lwd=0.85, catMethod=brk,numCats=5,
                addLegend=F, missingCountryCol="lightgrey")
