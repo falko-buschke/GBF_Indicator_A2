@@ -1,14 +1,14 @@
 ﻿ISO3,Party,A2,Source,Disaggregation,Data Type,Notes
 EUE,EU,0.455,National data,Natural and semi-natural,Land cover,Used Corine Land cover data 
-UGA,Uganda,Unclear,National data,None,Mixed data,Only data for forests and wetlands
+UGA,Uganda,Unclear,National data,None,Mixed sources,Only data for forests and wetlands
 LSO,Lesotho,0.8002,National data,GET,Ecosystem map,Used Global Ecosystem Atlas
 CHE,Switzerland,No data available,NA,None,None,Eurostat Typology will be available from 2027 and updated annually
 SDN,Sudan,0.943468,National data,None,Land cover,"Unclear, but seems to be landcover data "
 JPN,Japan,No data available,NA,None,None,No extra context
 FIN,Finland,0.8972,National data,GET,Land cover,"Used Corine Land cover data 2018, crosswalked to GET"
-TGO,Togo,No data available,NA,None,Mixed data,Reported 24.4% forest cover (including planted areas)
+TGO,Togo,No data available,NA,None,Mixed sources,Reported 24.4% forest cover (including planted areas)
 GMB,The Gambia,No data available,NA,None,Land cover,"Baseline land cover data exists, but updated national ecosystem extent statistics aligned with GBF definitions are pending."
-NGA,Nigeria,0.779,National data,Ecosystem type,Mixed data,"Global Forest Watch, Scientific paper, FAO, estimates - no single map"
+NGA,Nigeria,0.779,National data,Ecosystem type,Mixed sources,"Global Forest Watch, Scientific paper, FAO, estimates - no single map"
 NZL,New Zealand,0.7877,National data,None,Ecosystem map,Based on National Ecosystem map (should be ready in March 2026 for Global Ecosystems Atlas)
 SWE,Sweden,0.940792,National data,Landcover classes,Land cover,"2023 National Land Cover Data, Statistics, Sweden (data for 2018 = 94.13%)"
 KAZ,Kazakhstan,No data available,NA,None,None,"Only have data for forests and protected areas, which are legally mandated"
@@ -36,7 +36,7 @@ TUR,Turkey,No data available,NA,None,None,"Data unavailable, particularly for ma
 DOM,Dominican Republic,No data available,NA,None,None,Data to be completed later
 DEU,Germany,No data available,NA,None,None,The German data is not yet compatible with the UN metadata. The indicator has to be developed.
 IRL,Ireland,0.23992,National data,GET,Ecosystem map,"Ireland's A.2 indicator is drawn directly from ecosystem extent accounts compiled based on the SEEA Esosystem Accounting framework. Ireland follows UNSEEA methodology, with IUCN GET ecosystem classification."
-POL,Poland,0.4268,National data,Ecosystem type,Mixed data,"A.2 not reported, but area stats are copied under indicaotr A.1"
+POL,Poland,0.4268,National data,Ecosystem type,Mixed sources,"A.2 not reported, but area stats are copied under indicaotr A.1"
 CHL,Chile,0.78182,National data,GET,Ecosystem map,"Indicator value here is for terrestrial, Chile reported seprately for each realm"
 GBR,United Kingdom,0.24,National data,GET,Ecosystem map,"Data here for terrestrial only, marine also include"
 VCT,Saint Vincent and the Grenadines,No data available,NA,None,None,No national or global data available for A.2 Extent of natural ecosystems for SVG. The country is going to establish baseline for this indicator in 2026
@@ -127,3 +127,10 @@ ALB,Albania,0.691,National data,Ecosystem type,Unclear,"Disaggregated by forest,
 TCD,Chad,Unclear,National data,Ecosystem type,Unclear,"The sum of the three disaggregared values (desert,  sahel, and savanna) add up to the total area of the country"
 MLI,Mali,Unclear,National data,None,Unclear,"Provides 6 unlabeld area estimates, with proportions that do not add up to 1"
 EST,Estonia,0.7239,National data,None,Land cover,The classification of natural and artificial ecosystems is defined and mapped by the Estonian MAES project ELME2
+BWA,Botswana,0.962,National data,Ecosystem type,Ecosystem map,"Cites Botswana National Ecosystem Assessment 2025. Main classes are aquatic, forest, grass- and shrubland, desert, hills, and agroecosystem"
+VCT,Saint Vincent and the Grenadines,No data available,NA,None,None,No national or global data available for A.2 Extent of natural ecosystems for SVG. The country is going to establish baseline for this indicator in 2026
+BHS,Bahamas,No data available,NA,None,None,Spatial data layers exist within the Bahamas National GIS Portal (BNGIS): https://www.bngis.gov.bs/interactive-map Biodiversity layers are not freely downloadable and require formal request to bngisc@bahamas.gov.bs. Data are available in geospatial format but not structured in Year/Unit/Value format for ORT submission. 
+BGR,Bulgaria,No data available,NA,None,None,No precise data available yet
+BLZ,Belize,0.727,National data,GET,Mixed sources,"The estimate does not include grassland as natural (grassland coverage comes from LDN estimates from a different year). If grassland estimates are added to natural, A2 rises to 0.923. The toal area of Belize is estimate as 22966km2 from World Bank"
+AGO,Angola,No data available,NA,None,None,"Narrative description of natural features, but no quantitative estimates"
+TTO,Trinidad and Tobago,0.668460039,National data,GET,Mixed sources,"Indicator value assumes a total area of 5130km2, and include forest data from 2025 plus grassland, wetland and waterbody datat from 2019. If only forest data are considered, indicator is 0.607446"
