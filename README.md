@@ -36,7 +36,7 @@ This directory include examples of the Figures produced as an output from the R-
 <img src="https://github.com/falko-buschke/GBF_Indicator_A2/blob/main/Figures/Figure2.png" alt="Fig2" width="600"/>
 
 #### Figure 3
-<img src="https://github.com/falko-buschke/GBF_Indicator_A2/blob/main/Figures/Figure3.png" alt="Fig3" width="600"/>
+<img src="https://github.com/falko-buschke/GBF_Indicator_A2/blob/main/Figures/Figure3.png" alt="Fig3" width="800"/>
 
 #### Figure 4
 <img src="https://github.com/falko-buschke/GBF_Indicator_A2/blob/main/Figures/Figure4.png" alt="Fig4" width="600"/>
